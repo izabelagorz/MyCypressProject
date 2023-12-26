@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.141" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-12-26T18:13:16" tests="0" file="cypress/integration/lokalizatory.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Lesson" timestamp="2023-12-26T18:13:16" tests="2" time="5.076" failures="1">
+    <testcase name="E2E - Lesson Lokalizatory" time="0.699" classname="Lokalizatory">
+    </testcase>
+    <testcase name="E2E - Lesson Lokalizatory część 2" time="0.000" classname="Lokalizatory część 2">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `#login-label`, but never found it. Queried from element: [ &lt;div#__next&gt;, 10 more... ]" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `#login-label`, but never found it. Queried from element: [ <div#__next>, 10 more... ]
+    at Context.eval (https://dareit.futbolkolektyw.pl/__cypress/tests?p=cypress\integration\lokalizatory.js:120:19)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

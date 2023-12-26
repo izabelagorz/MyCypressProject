@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-26T18:11:11.493Z",
+    "end": "2023-12-26T18:11:57.583Z",
+    "duration": 46090,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7873aa77-31e3-4ecf-a7af-e1736f7dc75b",
+      "title": "",
+      "fullFile": "cypress/integration/alerty.js",
+      "file": "cypress/integration/alerty.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "478258d0-ab31-4288-99a9-b53cdcd7bdcf",
+          "title": "E2E - Alerty",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alert",
+              "fullTitle": "E2E - Alerty Alert",
+              "timedOut": null,
+              "duration": 43111,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://testowanie-oprogramowania.pl/lekcje/alerty/\");\n_alertPage.default.clickOnBtnAlert1();\n_alertPage.default.verifyAlertText(\"Przykładowa treść alertu\");",
+              "err": {},
+              "uuid": "61de9226-3dce-4cd9-844a-c64167091065",
+              "parentUUID": "478258d0-ab31-4288-99a9-b53cdcd7bdcf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alert - confirm",
+              "fullTitle": "E2E - Alerty Alert - confirm",
+              "timedOut": null,
+              "duration": 96,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_alertPage.default.clickOnBtnAlert2();\n_alertPage.default.verifyAlertConfirmText();\n_alertPage.default.acceptAlert();",
+              "err": {},
+              "uuid": "b2495d89-43cb-4f2f-b542-3d0f2bfbc711",
+              "parentUUID": "478258d0-ab31-4288-99a9-b53cdcd7bdcf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "61de9226-3dce-4cd9-844a-c64167091065",
+            "b2495d89-43cb-4f2f-b542-3d0f2bfbc711"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 43207,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawasomenpm",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

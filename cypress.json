@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://dareit.futbolkolektyw.pl",
+  "includeShadowDom": true,
+  "chromeWebSecurity": true,
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "video": false,
+  "theme": "dark",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "projectId": "m6kdx3"
+}

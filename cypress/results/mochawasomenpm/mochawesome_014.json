@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-26T18:14:32.907Z",
+    "end": "2023-12-26T18:14:46.544Z",
+    "duration": 13637,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f939ef90-699b-440c-bc3d-dc8ddcbcfbfc",
+      "title": "",
+      "fullFile": "cypress/integration/wpisywanie.js",
+      "file": "cypress/integration/wpisywanie.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3c5d2354-50cd-452d-a5b2-e9e1883d49bc",
+          "title": "E2E - Akcja wpisywania",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Wpisywanie wartosci w pole",
+              "fullTitle": "E2E - Akcja wpisywania Wpisywanie wartosci w pole",
+              "timedOut": null,
+              "duration": 13404,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.searchPhrase(\"user@user.pl\", 1000); // cy.get(\"#login\").type(\"user01@getnada.com{backspace}\", {delay: 500})",
+              "err": {},
+              "uuid": "c000dc58-7912-4aea-aec7-588257953d0d",
+              "parentUUID": "3c5d2354-50cd-452d-a5b2-e9e1883d49bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Czyszczenie wartości z pola input",
+              "fullTitle": "E2E - Akcja wpisywania Czyszczenie wartości z pola input",
+              "timedOut": null,
+              "duration": 173,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#login\").clear();",
+              "err": {},
+              "uuid": "c3418254-1730-435b-b737-f08aa6009ad2",
+              "parentUUID": "3c5d2354-50cd-452d-a5b2-e9e1883d49bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c000dc58-7912-4aea-aec7-588257953d0d",
+            "c3418254-1730-435b-b737-f08aa6009ad2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13577,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawasomenpm",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

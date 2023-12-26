@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-26T18:12:54.095Z",
+    "end": "2023-12-26T18:12:58.752Z",
+    "duration": 4657,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1404dbdf-baea-4bb8-ab23-0c650798bb00",
+      "title": "",
+      "fullFile": "cypress/integration/examplePageObjectModel.js",
+      "file": "cypress/integration/examplePageObjectModel.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8e59b92-3a5b-4e2d-a23e-88f416121d8f",
+          "title": "E2E - Akcja wybierania opcji",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Kliknięcie na element",
+              "fullTitle": "E2E - Akcja wybierania opcji Kliknięcie na element",
+              "timedOut": null,
+              "duration": 4617,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://dareit.futbolkolektyw.pl/pl/login?redirected=true\");\ncy.get(\"#login\").type(\"user01@getnada.com\", {\n  delay: 10\n});\ncy.get(\"#password\").type(\"Test-1234\", {\n  delay: 10\n});\ncy.get(\".MuiButton-label\").eq(0).click();\ncy.contains(\"Dodaj gracza\").click(); //selectPage.selectAllOption();",
+              "err": {},
+              "uuid": "199fada3-fa97-481c-a48d-74216f0b3500",
+              "parentUUID": "b8e59b92-3a5b-4e2d-a23e-88f416121d8f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "199fada3-fa97-481c-a48d-74216f0b3500"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4617,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawasomenpm",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

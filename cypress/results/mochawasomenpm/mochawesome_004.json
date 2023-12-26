@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-26T18:12:35.577Z",
+    "end": "2023-12-26T18:12:40.643Z",
+    "duration": 5066,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3a27530-23c3-4128-b5a2-6d0bcaede69b",
+      "title": "",
+      "fullFile": "cypress/integration/checkbox.js",
+      "file": "cypress/integration/checkbox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "97ea965f-ecfd-43ac-b51f-36d5444bc724",
+          "title": "E2E - Akcja kliknięcia checkbox",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Kliknięcie na element",
+              "fullTitle": "E2E - Akcja kliknięcia checkbox Kliknięcie na element",
+              "timedOut": null,
+              "duration": 4995,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.get('.bapf_body').find(\"input\").then(checkbox => {\n  cy.get(checkbox).eq(0).check({\n    force: true\n  }); //force sprawia że checkbox zostaje zaklikany mimo że coś innego go zasłania tutaj (na stronie dor) był to baner \n  cy.get(checkbox).eq(1).invoke(\"prop\", \"checked\").then(zaznaczony => {\n    cy.log(zaznaczony);\n  });\n  cy.get(checkbox).eq(2);\n  cy.get(checkbox).eq(3);\n  cy.get(checkbox).eq(4);\n  cy.get(checkbox).eq(5).check({\n    force: true\n  });\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.bapf_body`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.bapf_body`, but never found it.\n    at Context.eval (https://dareit.futbolkolektyw.pl/__cypress/tests?p=cypress\\integration\\checkbox.js:103:8)",
+                "diff": null
+              },
+              "uuid": "9e1ad199-e4ee-4c28-bee8-2a590143ce0f",
+              "parentUUID": "97ea965f-ecfd-43ac-b51f-36d5444bc724",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9e1ad199-e4ee-4c28-bee8-2a590143ce0f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4995,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawasomenpm",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

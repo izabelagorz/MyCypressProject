@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="41.047" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-12-26T18:13:34" tests="0" file="cypress/integration/triger.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - scrolowanie/najechanie" timestamp="2023-12-26T18:13:34" tests="2" time="40.945" failures="1">
+    <testcase name="E2E - scrolowanie/najechanie Najechanie na dany element" time="0.000" classname="Najechanie na dany element">
+      <failure message="`cy.screenshot()` timed out waiting `30000ms` to complete." type="CypressError"><![CDATA[CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.
+    at https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:160778:81
+    at tryCatcher (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:13022:23)
+    at https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:8144:41
+    at tryCatcher (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:13022:23)
+    at Promise._settlePromiseFromHandler (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:10957:31)
+    at Promise._settlePromise (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:11014:18)
+    at Promise._settlePromise0 (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:11059:10)
+    at Promise._settlePromises (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:11135:18)
+    at _drainQueueStep (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:7729:12)
+    at _drainQueue (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:7722:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:7738:5)
+    at Async.drainQueues (https://dor-cosmetics.pl/__cypress/runner/cypress_runner.js:7608:14)]]></failure>
+    </testcase>
+    <testcase name="E2E - scrolowanie/najechanie Scrollowanie - do boxa" time="0.240" classname="Scrollowanie - do boxa">
+    </testcase>
+  </testsuite>
+</testsuites>

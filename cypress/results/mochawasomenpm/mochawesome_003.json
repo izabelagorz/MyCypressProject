@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-26T18:12:16.759Z",
+    "end": "2023-12-26T18:12:31.745Z",
+    "duration": 14986,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f9265718-ba63-4504-9ae0-ab20327579f4",
+      "title": "",
+      "fullFile": "cypress/integration/asercja.js",
+      "file": "cypress/integration/asercja.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9ab28e4-e7f7-4d3b-9760-890e96973013",
+          "title": "E2E - Asercje",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Asercje expect oraz should",
+              "fullTitle": "E2E - Asercje Asercje expect oraz should",
+              "timedOut": null,
+              "duration": 9798,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://dor-cosmetics.pl\");\ncy.get(\".wcmaa-popup-agree\").scrollIntoView().click();\ncy.contains(\"Kontakt\").click(); //Weryfikacja tekstu\ncy.get(\"h3\").should(\"contain\", \"Dane kontaktowe\");\ncy.get(\"h3\").then(zakladka => {\n  expect(zakladka).to.contain(\"Dane kontaktowe\");\n}); // Sprawdzenie czy nie zawiera tekstu\ncy.get(\"h3\").should(\"not.contain\", \"bleble\");\ncy.get(\"h3\").then(tytul => {\n  expect(tytul).not.to.contain();\n}); //Weryfikacja czy znacznik posiada klase\ncy.get('input[name=\"your-email\"]').eq(0).should(\"have.class\", \"wpcf7-form-control\");\ncy.get('input[name=\"your-email\"]').eq(0).then(placeholder => {\n  expect(placeholder).to.have.class(\"wpcf7-form-control\");\n}); //Czy element jest widoczny\ncy.get('input[name=\"your-email\"]').should(\"be.visible\"); // cy.get('input[name=\"your-email\"]').should(\"not.be.visible\"); //czy jest nie widoczny element\ncy.get('input[name=\"your-email\"]').eq(0).then(placeholder => {\n  expect(placeholder).to.be.visible;\n}); //Wryfikacja ilości pobranych elementów\ncy.get(\"#menu-footer-1\").find(\"li\").should(\"have.length\", 4);\ncy.get(\"#menu-footer-1\").find(\"li\").then(pozycje => {\n  expect(pozycje).to.have.length(4);\n}); //Weryfikacja wartości css danego elementu\ncy.get(\"#Footer\").should(\"have.css\", \"background-color\", \"rgb(250, 226, 229)\");\ncy.get(\"#Footer\").then(kolor => {\n  expect(kolor).to.have.css(\"background-color\", \"rgb(250, 226, 229)\");\n});",
+              "err": {},
+              "uuid": "0fb22cb8-a7b5-44e6-b179-c7fd7fa80530",
+              "parentUUID": "b9ab28e4-e7f7-4d3b-9760-890e96973013",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0fb22cb8-a7b5-44e6-b179-c7fd7fa80530"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9798,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawasomenpm",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
