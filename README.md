@@ -1,10 +1,10 @@
 # MyCypressProject
  Test Automation Cypress Javascript
 
-I created this project to practice cypress with javascript. <br>
-I learned how to use cypress functions used for test automation <br>
-I also had the opportunity to learn the basic functionality of cypress dyshboar and docker.<br>
 
+I created this project to practice cypress with javascript. <br>
+I learned to use cypress features used for test automation and best practices like Page Object Model. <br>
+I also had the opportunity to learn the basic functionality of cypress dyshboar and docker.<br>
 
 
 Plugins that I used in project:

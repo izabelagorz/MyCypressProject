@@ -1,0 +1,25 @@
+{
+  "login": "user01@getnada.com",
+  "incorrectLogin": "abc@o2.pl",
+  "password":"Test-1234",
+  "incorrectPassword":"Test-1234",
+  "validationInfo": "Identifier or password invalid.",
+  "email": "user01@getnada.com",
+  "name": "Jan",
+  "surname": "Kowalski",
+  "phone": "666254444",
+  "weight": "51kg",
+  "height": "164",
+  "age": "27",
+  "club": "name of the club",
+  "level": "senior",
+  "mainPosition": "defender",
+  "secondPosition": "defender2",
+  "achievements": "golden player",
+  "laczyNasPilka": "nick name",
+  "90minut": "text",
+  "previousClub": "atletico atletico",
+  "statusMessage403": "Forbidden"
+  
+
+}
