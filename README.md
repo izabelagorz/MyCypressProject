@@ -9,7 +9,7 @@ I also had the opportunity to learn the basic functionality of cypress dyshboar 
 
 Plugins that I used in project:
  
-*cypress-audit/lighthouse: ^1.4.2* // has provided tools and metrics concerning applications performances <br>
+*cypress-audit/lighthouse: ^1.4.2* // checking applications performances <br>
 *cypress-dark: ^1.8.3* // dark them for cypress<br>
 *cypress-file-upload: ^5.0.8* // to easly upload file in test<br>
 *mocha-junit-reporter: ^2.2.1* // to create raports<br>
