@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://dareit.futbolkolektyw.pl/en/",
+  "baseUrl": "https://dareit.futbolkolektyw.pl/en/login?redirected=true",
   "includeShadowDom": true,
   "chromeWebSecurity": true,
   "viewportHeight": 1080,

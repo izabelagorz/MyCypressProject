@@ -1,4 +1,4 @@
-class SelectPage {
+class SelectDistrict {
     get select() {
         return cy.get("#mui-component-select-district");
     }
@@ -44,4 +44,4 @@ class SelectPage {
     }
 }
 
-export default new SelectPage();
+export default new SelectDistrict();

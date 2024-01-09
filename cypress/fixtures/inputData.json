@@ -10,15 +10,17 @@
   "phone": "666254444",
   "weight": "51kg",
   "height": "164",
-  "age": "27",
+  "age": "2000-12-09",
   "club": "name of the club",
   "level": "senior",
   "mainPosition": "defender",
   "secondPosition": "defender2",
   "achievements": "golden player",
-  "laczyNasPilka": "nick name",
-  "90minut": "text",
-  "previousClub": "atletico atletico",
+  "languages": "polski",
+  "webLaczy": "nick name",
+  "web90": "text",
+  "prevClub": "atletico atletico",
+  "youtube":"https://www.youtube.com/watch?v=voAigCGViMc",
   "statusMessage403": "Forbidden"
   
 
