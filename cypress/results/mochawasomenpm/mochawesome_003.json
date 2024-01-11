@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-11T08:19:55.537Z",
-    "end": "2024-01-11T08:19:58.169Z",
-    "duration": 2632,
+    "start": "2024-01-11T19:05:55.881Z",
+    "end": "2024-01-11T19:05:57.562Z",
+    "duration": 1681,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7df8d9ee-bf21-495d-aeed-93ba55c6306b",
+      "uuid": "0ebc8640-c2f2-44b6-829f-039f1caf2593",
       "title": "",
       "fullFile": "cypress/integration/failedLogin.js",
       "file": "cypress/integration/failedLogin.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3adac8b2-2e34-4a06-aa42-95e79c5e8898",
+          "uuid": "92d967ab-a931-468f-a529-9c8cf4682b41",
           "title": "E2E - Failed Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Failed Login",
               "fullTitle": "E2E - Failed Login Failed Login",
               "timedOut": null,
-              "duration": 2590,
+              "duration": 1631,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.intercept(\"POST\", \"https://api.scouts-test.futbolkolektyw.pl/auth/local\").as(\"requestLogin\");\ncy.visit(\"/\");\ncy.get(\"#login\").click().type(this.exempleData.incorrectLogin);\ncy.get(\"#password\").click().type(this.exempleData.incorrectPassword);\ncy.contains(\"Sign in\").click();\ncy.get('span[class=\"MuiTypography-root MuiTypography-caption MuiTypography-colorError MuiTypography-gutterBottom\"]').then(function (textValidation) {\n  expect(textValidation).to.have.contain(this.exempleData.validationInfo);\n  cy.wait(\"@requestLogin\");\n  cy.get(\"@requestLogin\").then(res => {\n    console.log(res);\n    expect(res.response.statusCode).to.equal(400);\n  });\n});",
               "err": {},
-              "uuid": "286fb4c6-b3c7-4a6b-8a63-7866e4fd5c20",
-              "parentUUID": "3adac8b2-2e34-4a06-aa42-95e79c5e8898",
+              "uuid": "ee1bd302-16c5-4ddf-af05-1508125f96a8",
+              "parentUUID": "92d967ab-a931-468f-a529-9c8cf4682b41",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "286fb4c6-b3c7-4a6b-8a63-7866e4fd5c20"
+            "ee1bd302-16c5-4ddf-af05-1508125f96a8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2590,
+          "duration": 1631,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

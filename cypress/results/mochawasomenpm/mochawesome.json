@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2024-01-11T08:19:22.760Z",
-    "end": "2024-01-11T08:19:33.482Z",
-    "duration": 10722,
+    "start": "2024-01-11T19:05:24.142Z",
+    "end": "2024-01-11T19:05:33.777Z",
+    "duration": 9635,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1bac085d-9021-4a02-a4ff-135f64eb90a2",
+      "uuid": "9600c00d-9574-4fbc-81c1-77aeddca8b6c",
       "title": "",
       "fullFile": "cypress/integration/addNewPlayer.js",
       "file": "cypress/integration/addNewPlayer.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ed65f66c-880e-4ab9-b556-9f18b613bcc4",
+          "uuid": "9ca08bc7-ac87-4e4f-8bb2-e502d628b4f5",
           "title": "Add a new player",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login",
               "fullTitle": "Add a new player Login",
               "timedOut": null,
-              "duration": 6195,
+              "duration": 5273,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.get(\"#login\").click().type(this.exempleData.login);\ncy.get(\"#password\").click().type(this.exempleData.password);\ncy.get(\".MuiButton-label\").eq(0).click();\ncy.contains(\"Add player\").click();",
               "err": {},
-              "uuid": "c92d7994-8143-422a-84dc-f90b3d48b570",
-              "parentUUID": "ed65f66c-880e-4ab9-b556-9f18b613bcc4",
+              "uuid": "cbdf8446-eb1c-460a-84eb-b1ae31e6d6ab",
+              "parentUUID": "9ca08bc7-ac87-4e4f-8bb2-e502d628b4f5",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Add player fields",
               "fullTitle": "Add a new player Add player fields",
               "timedOut": null,
-              "duration": 4386,
+              "duration": 4287,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,22 +69,22 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"email\"]`, but never found it.\n    at Context.eval (https://dareit.futbolkolektyw.pl/__cypress/tests?p=cypress\\integration\\addNewPlayer.js:139:8)",
                 "diff": null
               },
-              "uuid": "88ff3b4a-35cc-481d-a06e-4db40009ee1f",
-              "parentUUID": "ed65f66c-880e-4ab9-b556-9f18b613bcc4",
+              "uuid": "070487c6-c701-44eb-910c-21536f0f2901",
+              "parentUUID": "9ca08bc7-ac87-4e4f-8bb2-e502d628b4f5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c92d7994-8143-422a-84dc-f90b3d48b570"
+            "cbdf8446-eb1c-460a-84eb-b1ae31e6d6ab"
           ],
           "failures": [
-            "88ff3b4a-35cc-481d-a06e-4db40009ee1f"
+            "070487c6-c701-44eb-910c-21536f0f2901"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 10581,
+          "duration": 9560,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
