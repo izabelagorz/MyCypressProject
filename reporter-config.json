@@ -6,7 +6,7 @@
   },
 
   "reporterOptions": {
-    "reportDir": "cypress/results/mochawasomenpm",
+    "reportDir": "cypress/results/mochawasome",
     "overwrite": false,
     "html": false,
     "json": true

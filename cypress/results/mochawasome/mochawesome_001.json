@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-11T19:05:38.702Z",
-    "end": "2024-01-11T19:05:40.329Z",
-    "duration": 1627,
+    "start": "2024-01-11T19:24:11.903Z",
+    "end": "2024-01-11T19:24:12.802Z",
+    "duration": 899,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a9bb7de0-cbae-471d-9e33-1a381e1ba959",
+      "uuid": "e53d7d29-7435-49c0-b841-f8b963ab69f4",
       "title": "",
       "fullFile": "cypress/integration/designCheck.js",
       "file": "cypress/integration/designCheck.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8433fe4d-bce5-4f8e-a62a-585e5298877a",
+          "uuid": "cff04bd4-0a3c-410f-a94c-333b9fb4bf81",
           "title": "Design check",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Colour check",
               "fullTitle": "Design check Colour check",
               "timedOut": null,
-              "duration": 1502,
+              "duration": 790,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"/\"); //Sign in button\ncy.get('button[class=\"MuiButtonBase-root MuiButton-root MuiButton-contained jss5 MuiButton-containedPrimary\"]').should(\"have.css\", \"background-color\", \"rgb(63, 81, 181)\");\ncy.get('button[class=\"MuiButtonBase-root MuiButton-root MuiButton-contained jss5 MuiButton-containedPrimary\"]').then(kolor => {\n  expect(kolor).to.have.css(\"background-color\", \"rgb(63, 81, 181)\");\n}); //Remaind password\ncy.get('a[class=\"MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary\"]').should(\"have.css\", \"color\", \"rgb(63, 81, 181)\");\ncy.get('a[class=\"MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary\"]').then(kolor => {\n  expect(kolor).to.have.css(\"color\", \"rgb(63, 81, 181)\");\n});\ncy.get('a[class=\"MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary\"]').should(\"have.css\", \"font-size\", \"14px\");\ncy.get('a[class=\"MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary\"]').then(kolor => {\n  expect(kolor).to.have.css(\"font-size\", \"14px\");\n}); //Title\ncy.get(\"h5\").should(\"have.css\", \"font-size\", \"24px\");\ncy.get(\"h5\").then(kolor => {\n  expect(kolor).to.have.css(\"font-size\", \"24px\");\n});\ncy.get(\"h5\").should(\"have.css\", \"color\", \"rgba(0, 0, 0, 0.87)\");\ncy.get(\"h5\").then(kolor => {\n  expect(kolor).to.have.css(\"color\", \"rgba(0, 0, 0, 0.87)\");\n});",
               "err": {},
-              "uuid": "17debdcc-90b9-476c-bbba-9d2c4a836e17",
-              "parentUUID": "8433fe4d-bce5-4f8e-a62a-585e5298877a",
+              "uuid": "25dfbb8e-7daf-4d8f-9ea9-11a3a59ab021",
+              "parentUUID": "cff04bd4-0a3c-410f-a94c-333b9fb4bf81",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "17debdcc-90b9-476c-bbba-9d2c4a836e17"
+            "25dfbb8e-7daf-4d8f-9ea9-11a3a59ab021"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1502,
+          "duration": 790,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -95,7 +95,7 @@
     "marge": {
       "options": {
         "id": "default",
-        "reportDir": "cypress/results/mochawasomenpm",
+        "reportDir": "cypress/results/mochawasome",
         "overwrite": false,
         "html": false,
         "json": true
