@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.722" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-01-11T08:19:22" tests="0" file="cypress/integration/addNewPlayer.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Add a new player" timestamp="2024-01-11T08:19:22" tests="2" time="10.646" failures="1">
+    <testcase name="Add a new player Login" time="6.195" classname="Login">
+    </testcase>
+    <testcase name="Add a new player Add player fields" time="0.000" classname="Add player fields">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `input[name=&quot;email&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name="email"]`, but never found it.
+    at Context.eval (https://dareit.futbolkolektyw.pl/__cypress/tests?p=cypress\integration\addNewPlayer.js:139:8)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

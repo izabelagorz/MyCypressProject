@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
+    "tests": 2,
     "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-12-26T17:04:34.578Z",
-    "end": "2023-12-26T17:04:36.374Z",
-    "duration": 1796,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 1,
+    "start": "2024-01-11T08:19:22.760Z",
+    "end": "2024-01-11T08:19:33.482Z",
+    "duration": 10722,
+    "testsRegistered": 2,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,49 +18,73 @@
   },
   "results": [
     {
-      "uuid": "310af9af-43ee-4415-91c5-96a0c52180b0",
+      "uuid": "1bac085d-9021-4a02-a4ff-135f64eb90a2",
       "title": "",
-      "fullFile": "cypress/integration/klik.js",
-      "file": "cypress/integration/klik.js",
+      "fullFile": "cypress/integration/addNewPlayer.js",
+      "file": "cypress/integration/addNewPlayer.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "784a996f-f621-4c6a-b4f3-2ad8a7ad6c29",
-          "title": "E2E - Akcja kliknięcia",
+          "uuid": "ed65f66c-880e-4ab9-b556-9f18b613bcc4",
+          "title": "Add a new player",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Kliknięcie na element",
-              "fullTitle": "E2E - Akcja kliknięcia Kliknięcie na element",
+              "title": "Login",
+              "fullTitle": "Add a new player Login",
               "timedOut": null,
-              "duration": 1755,
+              "duration": 6195,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"/\");\ncy.contains('[class=\"MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary\"]', 'Przypomnij hasło').click();\ncy.contains('Wróć do zaloguj').click();",
+              "code": "cy.visit(\"/\");\ncy.get(\"#login\").click().type(this.exempleData.login);\ncy.get(\"#password\").click().type(this.exempleData.password);\ncy.get(\".MuiButton-label\").eq(0).click();\ncy.contains(\"Add player\").click();",
               "err": {},
-              "uuid": "c0a7791a-bd68-4b20-8ee7-91e7e3e6ea23",
-              "parentUUID": "784a996f-f621-4c6a-b4f3-2ad8a7ad6c29",
+              "uuid": "c92d7994-8143-422a-84dc-f90b3d48b570",
+              "parentUUID": "ed65f66c-880e-4ab9-b556-9f18b613bcc4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add player fields",
+              "fullTitle": "Add a new player Add player fields",
+              "timedOut": null,
+              "duration": 4386,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"email\"]').type(this.exempleData.email);\ncy.get('input[name=\"name\"]').type(this.exempleData.name);\ncy.get('input[name=\"surname\"]').type(this.exempleData.surname);\ncy.get('input[name=\"phone\"]').type(this.exempleData.phone, {\n  delay: 10\n});\ncy.get('input[name=\"weight\"]').type(this.exempleData.weight);\ncy.get('input[name=\"height\"]').type(this.exempleData.height);\ncy.get('input[name=\"age\"]').type(this.exempleData.age);\n_selectLeg.default.selectAllOption();\ncy.get('input[name=\"club\"]').type(this.exempleData.club);\ncy.get('input[name=\"level\"]').type(this.exempleData.level);\ncy.get('input[name=\"mainPosition\"]').type(this.exempleData.mainPosition);\ncy.get('input[name=\"secondPosition\"]').type(this.exempleData.secondPosition);\n_selectDistrict.default.selectAllOption();\ncy.get('input[name=\"achievements\"]').type(this.exempleData.achievements);\ncy.get('input[name=\"achievements\"]').type(this.exempleData.achievements);\ncy.contains(\"Add language\").click();\ncy.get('input[name=\"languages[0]\"]').type(this.exempleData.languages);\ncy.get('input[name=\"webLaczy\"]').type(this.exempleData.webLaczy);\ncy.get('input[name=\"web90\"]').type(this.exempleData.web90);\ncy.get('input[name=\"prevClub\"]').type(this.exempleData.prevClub);\ncy.contains(\"Add link to Youtube\").click();\ncy.get('input[name=\"webYT[0]\"]').type(this.exempleData.youtube);\ncy.get('button[type=\"submit\"]').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"email\"]`, but never found it.\n    at Context.eval (https://dareit.futbolkolektyw.pl/__cypress/tests?p=cypress\\integration\\addNewPlayer.js:139:8)",
+                "diff": null
+              },
+              "uuid": "88ff3b4a-35cc-481d-a06e-4db40009ee1f",
+              "parentUUID": "ed65f66c-880e-4ab9-b556-9f18b613bcc4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c0a7791a-bd68-4b20-8ee7-91e7e3e6ea23"
+            "c92d7994-8143-422a-84dc-f90b3d48b570"
           ],
-          "failures": [],
+          "failures": [
+            "88ff3b4a-35cc-481d-a06e-4db40009ee1f"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 1755,
+          "duration": 10581,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -7,7 +7,10 @@
   "email": "user01@getnada.com",
   "name": "Jan",
   "surname": "Kowalski",
+  "editName": "Karol",
+  "editSurname": "Wieczorek",
   "phone": "666254444",
+  "editPhone": "666259999",
   "weight": "51kg",
   "height": "164",
   "age": "2000-12-09",
@@ -20,6 +23,7 @@
   "webLaczy": "nick name",
   "web90": "text",
   "prevClub": "atletico atletico",
+  "editPrevClub": "another club",
   "youtube":"https://www.youtube.com/watch?v=voAigCGViMc",
   "statusMessage403": "Forbidden"
   

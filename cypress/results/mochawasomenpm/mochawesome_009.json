@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-12-26T18:13:12.184Z",
-    "end": "2023-12-26T18:13:13.043Z",
-    "duration": 859,
+    "start": "2024-01-11T08:22:41.363Z",
+    "end": "2024-01-11T08:22:42.030Z",
+    "duration": 667,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5ea00a96-f64d-4fd0-9193-dcee69b68d36",
+      "uuid": "17546e90-d6bb-4feb-b771-1abb607f6345",
       "title": "",
       "fullFile": "cypress/integration/lighthouse.js",
       "file": "cypress/integration/lighthouse.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6cc332b2-f0c6-44a8-8f1c-1ab8cfdcf901",
+          "uuid": "ad02257b-3eb8-460d-8e7d-9a7a76c92ee7",
           "title": "Lighthouse Test",
           "fullFile": "",
           "file": "",
@@ -35,10 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "test pierwszej strony",
-              "fullTitle": "Lighthouse Test test pierwszej strony",
+              "title": "Webside test",
+              "fullTitle": "Lighthouse Test Webside test",
               "timedOut": null,
-              "duration": 784,
+              "duration": 624,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.lighthouse({\n  accessibility: 40,\n  \"best-practices\": 50,\n  seo: 50,\n  pwa: 20,\n  performance: 50\n});",
               "err": {},
-              "uuid": "d1be8f00-6eb3-4691-a0d0-b20efdcddb74",
-              "parentUUID": "6cc332b2-f0c6-44a8-8f1c-1ab8cfdcf901",
+              "uuid": "c8b8fb46-afb7-4574-8903-903795380de1",
+              "parentUUID": "ad02257b-3eb8-460d-8e7d-9a7a76c92ee7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d1be8f00-6eb3-4691-a0d0-b20efdcddb74"
+            "c8b8fb46-afb7-4574-8903-903795380de1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 784,
+          "duration": 624,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

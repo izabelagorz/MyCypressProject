@@ -1,11 +1,13 @@
 /// <reference types="cypress" />
 
+///Chceking performances of the website
+
 context("Lighthouse Test", () => {
     beforeEach(() => {
-      cy.visit("https://dareit.futbolkolektyw.pl");
+      cy.visit("https://dareit.futbolkolektyw.pl/en/login");
     });
   
-    it("test pierwszej strony", () => {
+    it("Webside test", () => {
       cy.lighthouse({
         accessibility: 40,
         "best-practices": 50,

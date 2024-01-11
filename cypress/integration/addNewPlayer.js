@@ -14,7 +14,6 @@ describe("Add a new player", () => {
     })
 
     it("Login", function() {
-        // cy.intercept("GET", "https://api.scouts-test.futbolkolektyw.pl/auth/local").as("requestAddPlayer")
         cy.visit("/");
     cy.get("#login").click().type(this.exempleData.login);
     cy.get("#password").click().type(this.exempleData.password);
@@ -46,6 +45,7 @@ describe("Add a new player", () => {
         cy.contains("Add link to Youtube").click();
         cy.get('input[name="webYT[0]"]').type(this.exempleData.youtube)
         cy.get('button[type="submit"]').click();
+
         
         
     })
