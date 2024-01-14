@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.464" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-14T10:27:52" tests="0" file="cypress/integration/editPlayer.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Edit existing player" timestamp="2024-01-14T10:27:52" tests="3" time="9.377" failures="0">
+    <testcase name="Edit existing player Login" time="1.772" classname="Login">
+    </testcase>
+    <testcase name="Edit existing player Edit player" time="7.513" classname="Edit player">
+    </testcase>
+    <testcase name="Edit existing player Assertion of edit player" time="0.054" classname="Assertion of edit player">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-11T19:24:34.231Z",
-    "end": "2024-01-11T19:24:34.958Z",
-    "duration": 727,
+    "start": "2024-01-14T10:28:05.224Z",
+    "end": "2024-01-14T10:28:07.956Z",
+    "duration": 2732,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "e24f9b88-7ab4-4cd8-88d6-5d68aa40287f",
+      "uuid": "45430980-d71a-47b6-ac14-aa196a4179a8",
       "title": "",
-      "fullFile": "cypress/integration/lighthouse.js",
-      "file": "cypress/integration/lighthouse.js",
+      "fullFile": "cypress/integration/failedLogin.js",
+      "file": "cypress/integration/failedLogin.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "080952a1-c359-4895-bc89-0ba105d04b8a",
-          "title": "Lighthouse Test",
+          "uuid": "ec64d4c1-9c44-4f16-b331-de0370283451",
+          "title": "E2E - Failed Login",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Webside test",
-              "fullTitle": "Lighthouse Test Webside test",
+              "title": "Failed Login",
+              "fullTitle": "E2E - Failed Login Failed Login",
               "timedOut": null,
-              "duration": 634,
+              "duration": 2681,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.lighthouse({\n  accessibility: 40,\n  \"best-practices\": 50,\n  seo: 50,\n  pwa: 20,\n  performance: 50\n});",
+              "code": "cy.intercept(\"POST\", \"https://api.scouts-test.futbolkolektyw.pl/auth/local\").as(\"requestLogin\");\ncy.visit(\"/\");\ncy.get(\"#login\").click().type(this.exempleData.incorrectLogin);\ncy.get(\"#password\").click().type(this.exempleData.incorrectPassword);\ncy.contains(\"Sign in\").click();\ncy.get('span[class=\"MuiTypography-root MuiTypography-caption MuiTypography-colorError MuiTypography-gutterBottom\"]').then(function (textValidation) {\n  expect(textValidation).to.have.contain(this.exempleData.validationInfo);\n  cy.wait(\"@requestLogin\");\n  cy.get(\"@requestLogin\").then(res => {\n    console.log(res);\n    expect(res.response.statusCode).to.equal(400);\n  });\n});",
               "err": {},
-              "uuid": "75cef069-132f-456a-b4f5-bb382c724da8",
-              "parentUUID": "080952a1-c359-4895-bc89-0ba105d04b8a",
+              "uuid": "0914a3c0-45b7-44cf-bfa4-e02abce965f1",
+              "parentUUID": "ec64d4c1-9c44-4f16-b331-de0370283451",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "75cef069-132f-456a-b4f5-bb382c724da8"
+            "0914a3c0-45b7-44cf-bfa4-e02abce965f1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 634,
+          "duration": 2681,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -95,7 +95,7 @@
     "marge": {
       "options": {
         "id": "default",
-        "reportDir": "cypress/results/mochawasome",
+        "reportDir": "cypress/results/mochawesome",
         "overwrite": false,
         "html": false,
         "json": true

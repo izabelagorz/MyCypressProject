@@ -12,9 +12,9 @@
     "browser": "npm run spec -- --browser chrome & npm run spec -- --browser edge",
     "delete:reports": "rm -r cypress/results/* || true",
     "prereport": "npm run delete:reports",
-    "mochawesome:marge": "npx mochawasome-merge \"cypress/results/mochawasome/*.json\" > mochawasome.json",
-    "mochawesome:html": "npx marge mochawasomenpm.json",
-    "full:test": "npm run delete:reports && npm run chrome && npm run mochawasome:marge && npm run mochawasome:html"
+    "mochawesome:marge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json",
+    "mochawesome:html": "npx marge mochawesome.json",
+    "full:test": "npm run delete:reports && npm run all && npm run mochawesome:marge && npm run mochawesome:html"
     
   },
   "keywords": [

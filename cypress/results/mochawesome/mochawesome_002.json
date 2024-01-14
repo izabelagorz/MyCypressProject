@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-11T19:24:16.529Z",
-    "end": "2024-01-11T19:24:24.898Z",
-    "duration": 8369,
+    "start": "2024-01-14T10:27:52.359Z",
+    "end": "2024-01-14T10:28:01.823Z",
+    "duration": 9464,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "efca7f78-1afe-4163-8d4a-5eb0cca618fa",
+      "uuid": "69ac9c4c-ce52-49e4-9ba1-f06b74375af9",
       "title": "",
       "fullFile": "cypress/integration/editPlayer.js",
       "file": "cypress/integration/editPlayer.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d750aeeb-9419-490d-aced-c8f3701c46b6",
+          "uuid": "887e002f-cb03-47a9-8b3a-2de38f2786d2",
           "title": "Edit existing player",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login",
               "fullTitle": "Edit existing player Login",
               "timedOut": null,
-              "duration": 1550,
+              "duration": 1772,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.get(\"#login\").click().type(this.exempleData.login);\ncy.get(\"#password\").click().type(this.exempleData.password);\ncy.get(\".MuiButton-label\").eq(0).click();",
               "err": {},
-              "uuid": "b97321f9-5d5c-416f-9a9a-503aaf7ef6f4",
-              "parentUUID": "d750aeeb-9419-490d-aced-c8f3701c46b6",
+              "uuid": "97632df6-6681-4ee2-ab0e-c61d0caada1a",
+              "parentUUID": "887e002f-cb03-47a9-8b3a-2de38f2786d2",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Edit player",
               "fullTitle": "Edit existing player Edit player",
               "timedOut": null,
-              "duration": 6689,
+              "duration": 7513,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.contains(\"Activity\").get(\"a\").eq(2).click();\ncy.get('input[name=\"name\"]').clear(this.exempleData.name);\ncy.get('input[name=\"name\"]').type(this.exempleData.editName);\ncy.get('input[name=\"surname\"]').clear(this.exempleData.surname);\ncy.get('input[name=\"surname\"]').type(this.exempleData.editSurname);\ncy.get('input[name=\"phone\"]').clear(this.exempleData.phone, {\n  delay: 10\n});\ncy.get('input[name=\"phone\"]').type(this.exempleData.editPhone, {\n  delay: 10\n});\ncy.get('input[name=\"prevClub\"]').clear(this.exempleData.prevClub);\ncy.get('input[name=\"prevClub\"]').type(this.exempleData.editPrevClub);\ncy.get('button[type=\"submit\"]').click();\ncy.get('div[class=\"Toastify__toast Toastify__toast--success\"]').click();\ncy.get(\"span\").contains(\"Main page\").click();\ncy.contains(\"Activity\").get(\"a\").eq(2).click();",
               "err": {},
-              "uuid": "60389f8c-4a7c-46be-8d8a-3c3071d9d5c9",
-              "parentUUID": "d750aeeb-9419-490d-aced-c8f3701c46b6",
+              "uuid": "b3466b9e-b552-4eb9-aed9-db4b09db68d1",
+              "parentUUID": "887e002f-cb03-47a9-8b3a-2de38f2786d2",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Assertion of edit player",
               "fullTitle": "Edit existing player Assertion of edit player",
               "timedOut": null,
-              "duration": 67,
+              "duration": 54,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get('span[class=\"MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock\"]').should(\"contain\", \"Karol Wieczorek\");",
               "err": {},
-              "uuid": "bbc1b26b-1b5c-457d-af9e-3e37e4372bd8",
-              "parentUUID": "d750aeeb-9419-490d-aced-c8f3701c46b6",
+              "uuid": "76cb3c78-d42f-47eb-b64d-024b5758d430",
+              "parentUUID": "887e002f-cb03-47a9-8b3a-2de38f2786d2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b97321f9-5d5c-416f-9a9a-503aaf7ef6f4",
-            "60389f8c-4a7c-46be-8d8a-3c3071d9d5c9",
-            "bbc1b26b-1b5c-457d-af9e-3e37e4372bd8"
+            "97632df6-6681-4ee2-ab0e-c61d0caada1a",
+            "b3466b9e-b552-4eb9-aed9-db4b09db68d1",
+            "76cb3c78-d42f-47eb-b64d-024b5758d430"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8306,
+          "duration": 9339,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -133,7 +133,7 @@
     "marge": {
       "options": {
         "id": "default",
-        "reportDir": "cypress/results/mochawasome",
+        "reportDir": "cypress/results/mochawesome",
         "overwrite": false,
         "html": false,
         "json": true
